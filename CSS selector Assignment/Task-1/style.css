@@ -1,0 +1,51 @@
+/* Combinator Selector Tasks */
+/* B.a - target the anchor tag to change color to red */
+nav a {
+    color: red;
+}
+
+/* B.b - target first h2 tag and change the text and bg color */
+nav > h2{
+    background-color: bisque;
+    color: green;
+}
+
+/* B.c - select first <p> tag and change the text color to red */
+div + p {
+    color: red;
+}
+
+/* Attribute Selector Task */
+/* C.a - Target anchor tag with attribute "href" and change color to red and remove text underline */
+a[href] {
+    color: red;
+    text-decoration: none;
+}
+
+/* C.b - Target the anchor tag with attribute of class name "active", change the text color, and provide the text style properties with underlining*/
+a[class="active"] {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+/* C.c - Target anchor tag with attribute of target whose value is"-self" and change the bg color*/
+a[target="_self"] {
+    background-color: blue;
+}
+
+/* Pseudo Selector Task */
+/* D.a - Target the last <p> tag and add"..."i.e. three dots after its value */
+p:last-child::after{
+    content: "...";
+}
+
+/* D.b - Target the list bullet points and change color of bullet points  */
+li::marker{
+    color: yellow;
+}
+
+/* D.c - Target second <p> tag, select first letter of the second <p> tag, and change the color to red also increase font size to 30px */
+p:nth-child(even)::first-letter{
+    color: red;
+    font-size: 30px;
+}
